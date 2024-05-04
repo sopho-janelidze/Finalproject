@@ -1,0 +1,74 @@
+@media (max-width:480px){
+    
+ .underhead {
+    position: relative;
+    left:5px;
+    max-width: 100%;
+    font-size: 15px; 
+
+  }
+
+  .photoblogall {
+    flex-direction: column;
+  }
+
+  #map {
+    left:0%;
+    max-width:100%;
+  }
+  #aboutp2{
+    position: relative;
+    left:0%;
+    top:40px;
+  }
+  #aboutp {
+    position: relative;
+    left:0%;
+    top:550px
+  }
+  #abouthead{
+    left:0%
+  }
+ .wraper{
+    max-width: 100%;
+ }
+ #postcard{
+    width: 400px;
+    height: 500px;
+    top:370px;
+    left:20px;
+ }
+ #poststamp {
+    display: none;
+ }
+ #aboutphoto{
+    bottom:100px
+ }
+ .contact {
+    max-width:300px;
+    font-size:5px;
+    left:0%;
+    bottom:0px;
+ }
+ .contact1{
+    display: none;
+ }
+
+ .notification{
+    width:450px;
+ }
+ #advice {
+    left:0%;
+    max-width: 400px;
+    top:400px
+ }
+ .slidepost {
+    display: none;
+ }
+ .splide {
+    left:0%;
+    bottom:10px;
+    width: 400px;
+    height: 300px;
+ }
+}

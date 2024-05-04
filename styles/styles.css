@@ -1,0 +1,547 @@
+:root {
+    --color1:rgb(114, 111, 111);
+    --color2:rgb(246, 235, 237);
+    --color3:rgb(238, 115, 156);
+}
+html {
+    scroll-behavior:smooth;
+}
+header{ 
+    background-color: rgb(245, 207, 213);
+    position: sticky;
+    top:0%;
+    z-index:1;
+}
+.navigation { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    height: 50px;
+    position: relative;
+    top:12px
+}
+.nav-bar {
+    position: absolute;
+    right:10px;
+}
+.nav-icon {
+    position: absolute;
+    right:200px;
+    top:5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    position: absolute;
+    left:710px; 
+    font-size: 21px;
+}
+.nav-text a:hover {
+    color:var(--color3);
+    cursor: pointer;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:var(--color1);
+}
+#searchbar {
+    padding: 8px;
+    border: none;
+    border-radius:7px;
+    font-size: 14px;
+}
+#searchbar:focus {
+    outline-color: violet 
+}
+#searchicon {
+    position: absolute;
+    right:15px;
+    top:7px;
+    font-size: 15px;
+}
+#headtext {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 60px;
+    color:rgb(121, 118, 118);
+    padding: 30px;
+}
+hr {
+    border-style:groove;
+}
+.underhead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    max-width: 480px;
+    position: relative;
+    left:600px;
+    font-size:18px;
+}
+.underhead a {
+    text-decoration: none;
+    color:#585757;
+}
+
+.underhead a:hover {
+    color:var(--color3);
+    cursor: pointer;
+}
+#lavanda { 
+    position: relative;
+    top:20px;  
+}
+.welcomeText { 
+    border: none 1px grey;
+    width: 500px;
+    position: absolute;
+    top:300px;
+    left:660px;
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+}
+#ptext {
+    width: 600px;
+    position: absolute;
+    right:7px;
+    top:50px
+}
+#start {
+    position: absolute;
+    color: white;
+    top:150px;
+    left:90px;
+}
+#start:hover {
+    color: var(--color3);
+}
+
+#blogname {
+    text-align: center;
+    color:var(--color1);
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
+    padding: 50px;
+}
+    
+.photo-blog {
+    height: 350px;
+    width: 320px;
+    background-color:var(--color2);
+    border-radius: 7px;
+    position: relative;
+}
+
+.photoblogall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image1 {
+    position: absolute;
+    left:25px;
+    top:15px}
+.photo-blog p {
+    text-align: center;
+    font-size:18px;
+    position: absolute;
+    left:70px;
+    top:280px;
+}
+#p1 {
+    position: absolute;
+    right:55px;
+}
+.photo-blog span {
+    position: absolute;
+    bottom: 10px;
+    font-size: 17px;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left:300px;
+    font-size: 20px;
+}
+#map {
+    position: relative;
+    left:550px;
+    margin-bottom: 100px;
+}
+#explorename {
+    text-align: center;
+    font-size:25px;
+    color:var(--color1);
+}
+.searchcountry {
+    position: relative;
+    top:70px;
+}
+
+#postname {
+    position:absolute;
+    bottom: 180px;
+    left:200px;
+    color: var(--color1);
+}
+#posttext{
+    font-size: 18px;
+    position: absolute;
+    bottom:50px;
+    left:20px;
+    width: 500px;
+}
+.slidepost {
+    position: relative;
+    left:200px;
+    top:190px;
+    width: 550px;
+    height:220px ;
+    border-radius:35px;
+    background-color: rgb(250, 236, 239);
+}
+.footer1 {
+    font-size:20px;
+    color:var(--color1);
+    margin-top: 40px;
+}
+.footer1 p {
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+.footer1 p:hover {
+    color:var(--color3);
+    cursor: pointer;
+}
+.footer2 {
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    width: 250px;
+    color:var(--color1);
+    margin-top: 40px;
+}
+.mainfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: rgb(245, 207, 213);
+    margin-top: 30px;
+}
+.put {
+    width: 150px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.put:focus {
+    outline-color: var(--color3);
+}
+button {
+    width: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.animate__flip {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation:flip; 
+    animation-duration: 2s;
+    font-size: 30px;
+} 
+    
+.animate__zoomIn{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: zoomIn infinite 4s; 
+    left:110px;
+    font-size: 15px;
+}
+
+.animate__slideInLeft {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation-iteration-count: 19; 
+    animation-duration: 5s;
+}
+
+.splide__slide img {
+    width:600px;
+    height:400px;
+    object-fit: cover;
+    object-fit: cover; 
+    position: relative;
+    border-radius: 10px;
+    
+  }
+
+.splide {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left:1000px;
+  bottom:150px ;
+}
+
+
+.divpost {
+    max-width:850px;
+    height:600px;
+    background-color:var(--color2);
+    margin-top: 150px;
+    position: relative;
+}
+#aboutphoto {
+    position: relative;
+    bottom:4px;
+    left:10px
+}
+#abouthead {
+    position: relative;
+    left:450px;
+    bottom: -10px;
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    color:var(--color1);
+}
+#aboutp {
+    width: 400px;
+    position: absolute;
+    left:410px;
+    margin: 30px;
+    font-size: 20px}
+#aboutp2{
+    width:400px;
+    font-size: 20px;
+    position: absolute;
+    left:430px;
+    top:180px
+} 
+
+.title {
+    color:rgb(95, 93, 93);
+}
+.title::before {
+    content: '\2193';
+    }
+
+.container {
+    max-width:400px ;
+    width: 100%;
+    border: 1px solid rgb(253, 205, 213);
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color2);
+      
+    }
+.description {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    }
+
+.container.active .description {
+    height: 100px;
+    transition: all 2s;
+    font-size: 17px;
+}
+    
+.container.active .title::before {
+    content: '\2191';
+}
+
+
+#traveltitle {
+    text-align: center;
+    color:var(--color1);
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+
+#postcard{
+    position: relative;
+    left:230px;
+   bottom:80px;
+    margin-top: 150px;
+}
+#poststamp {
+    position: absolute;
+    right:300px;
+    top:3800px;
+    margin-top: 150px;    
+}
+
+.contact1 { 
+    width: 300px;
+    font-size: 20px;
+    position: relative;
+    bottom:20px;
+}
+.contact2 {
+    font-size:20px;
+    position: relative;
+    left:100px;
+    bottom: 20px;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    position: relative;
+    bottom:400px;
+    left:650px}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}
+#submit {
+    margin-top: 8px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.error-text {
+    color:red
+}
+#show {
+    position: relative;
+    left:240px;
+    bottom:18px;
+    font-size:16px;
+}
+.genderpart {
+    margin: 10px;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+.notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(247, 242, 235);
+    padding: 10px;
+    text-align: center;
+    color: var(--color1);
+    font-size: 20px;
+}
+
+.buttons button{
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#advicehead{
+    font-size: 25px;
+    color:var(--color1);
+
+}
+
+#advice {
+    position: relative;
+    left:60%;
+    width: 600px;
+    bottom:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color2)
+}
+
+#search {
+    outline: none;
+    width: 100px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-container{
+    display: none;
+    position: absolute;
+    width: 150px;
+    font-size: 20px;
+    background-color: var(--color2); 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow:hidden;
+    cursor: pointer;
+}
+.dropdown-container:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-container {
+    display: block;
+}
+
+#contacttitle {
+    text-align: center;
+    color:var(--color1);
+    margin-bottom: 5px;
+}
+
+ ul {list-style: none;
+}
+
+.list{display: flex;}
+
+
+.burgerbar {
+    position: absolute;
+    top:10px;
+    right:980px;
+    font-size: 25px;
+    display:none ;}
+    
+    @media (max-width:480px) {
+        .nav-text {display: none;}
+        
+        .burgerbar {display: block;}
+        .list {flex-direction: column;
+            text-align:center;
+            font-size: 17px;
+        }
+        .nav-text.activenav{
+            display: block;
+            margin-top: 20px;
+        }
+    }
+    

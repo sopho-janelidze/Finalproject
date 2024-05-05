@@ -274,8 +274,8 @@ nav .mainMenu {
   #advice {
     left:0%;
     max-width: 600px;
-    top:500px;
     position: relative;
+    bottom:50px
   }
   .slidepost {
     display: none;

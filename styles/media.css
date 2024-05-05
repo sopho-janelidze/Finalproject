@@ -1,9 +1,12 @@
 @media (max-width:480px){
-    
+  body {
+    width: 400px;
+  }
+ 
  .underhead {
     position: relative;
     left:5px;
-    max-width: 100%;
+    width: 350px;
     font-size: 15px; 
 
   }
@@ -14,17 +17,20 @@
 
   #map {
     left:0%;
-    max-width:100%;
+    width:350px;
+  }
+
+  #bydestination {
+   display: none;
   }
   #aboutp2{
-    position: relative;
-    left:0%;
-    top:40px;
+    display: none;
   }
   #aboutp {
     position: relative;
-    left:0%;
+    left:-30px;
     top:550px;
+    max-width: 100%;
   }
   #abouthead{
     left:0%
@@ -33,34 +39,39 @@
     max-width: 100%;
  }
  #postcard{
-    width: 400px;
-    height: 500px;
-    top:370px;
-    left:20px;
+   display: none;
  }
  #poststamp {
     display: none;
  }
  #aboutphoto{
-    bottom:100px
+    bottom:130px;
+    width: 350px;
+ }
+ .divpost {
+   bottom:200px;
  }
  .contact {
-    max-width:200px;
+    max-width:150px;
     font-size:4px;
     left:0%;
-    bottom:0px;
+    bottom:-30px;
  }
  .contact1{
     display: none;
  }
+ #show {
+   left:120px
+ }
 
  .notification{
-    width:450px;
+    width:400px;
  }
  #advice {
     left:0%;
-    max-width: 400px;
-    top:400px
+    max-width: 380px;
+    bottom:0px;
+    position: relative;
  }
  .slidepost {
     display: none;
@@ -68,7 +79,19 @@
  .splide {
     left:0%;
     bottom:10px;
-    width: 400px;
+    max-width: 380px;
     height: 300px;
  }
+ #scroller {
+   max-width: 100%;
+ }
+
+ nav .mainMenu {
+   max-width: 400px;
+ }
+
+ .welcomeText {
+   display: none;
+ }
+
 }

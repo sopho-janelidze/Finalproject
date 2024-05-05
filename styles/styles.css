@@ -335,7 +335,7 @@ button {
 #postcard{
     position: relative;
     left:230px;
-   bottom:80px;
+    bottom:80px;
     margin-top: 150px;
 }
 #poststamp {
@@ -515,9 +515,9 @@ nav {
     font-size: 25px;
     font-family: "Dancing Script", cursive;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 580px) {
     nav .mainMenu {
-      height: 100vh;
+      height: 800px;
       position: fixed;
       top: 0px;
       right: 0px;

@@ -515,7 +515,7 @@ nav {
     font-size: 25px;
     font-family: "Dancing Script", cursive;
   }
-  @media (max-width: 580px) {
+  @media (max-width: 800px) {
     nav .mainMenu {
       height: 800px;
       position: fixed;

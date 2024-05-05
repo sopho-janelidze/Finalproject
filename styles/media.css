@@ -95,3 +95,207 @@
  }
 
 }
+
+
+@media (max-width:768px){
+body {
+  width:650px;
+}
+#lavanda {
+  width:650px
+}
+.underhead {
+  position: relative;
+  left:5px;
+  width: 650px;
+  font-size: 15px; 
+
+}
+
+.photoblogall {
+  flex-direction: column;
+}
+
+#map {
+  left:0%;
+  width:550px;
+}
+
+#bydestination {
+ display: none;
+}
+#aboutp2{
+  display: none;
+}
+#aboutp {
+  position: relative;
+  left:-30px;
+  top:550px;
+  max-width: 100%;
+}
+#abouthead{
+  left:0%
+}
+.wraper{
+  width: 500px;
+}
+#postcard{
+ display: none;
+}
+#poststamp {
+  display: none;
+}
+#aboutphoto{
+  bottom:130px;
+  width: 400px;
+}
+.divpost {
+  width: 500px;
+ bottom:200px;
+}
+.contact {
+  max-width:150px;
+  font-size:4px;
+  left:0%;
+  bottom:-30px;
+}
+.contact1{
+  display: none;
+}
+#show {
+ left:120px
+}
+
+.notification{
+  width:600px;
+}
+#advice {
+  left:0%;
+  max-width: 400px;
+  bottom:0px;
+  position: relative;
+}
+.slidepost {
+  display: none;
+}
+.splide {
+  left:0%;
+  bottom:10px;
+  max-width: 480px;
+  height: 300px;
+}
+#scroller {
+ max-width: 100%;
+}
+
+nav .mainMenu {
+ max-width: 600px;
+}
+
+.welcomeText {
+ display: none;
+}
+
+}
+
+@media (max-width:1024px){
+ 
+  .underhead {
+    position: relative;
+    left:5px;
+    width: 750px;
+    font-size: 15px; 
+  
+  }
+  
+  .photoblogall {
+    flex-direction: column;
+  }
+  
+  #map {
+    left:0%;
+    width:750px;
+  }
+  
+  #bydestination {
+    position: relative;
+   right:250px
+  }
+  #aboutp2{
+    position: relative;
+    left:10px;
+  }
+  #aboutp {
+    position: relative;
+    left:-20px;
+    top:700px;
+    max-width: 100%;
+  }
+  #abouthead{
+    left:0%
+  }
+  .wraper{
+    width: 700px;
+  }
+  #postcard{
+   position: relative;
+   top:380px;
+   left:0px
+  }
+  #poststamp {
+    position: absolute;
+    top:4600px
+  }
+  #aboutphoto{
+    bottom:130px;
+    width: 400px;
+  }
+  .divpost {
+    width: 500px;
+   bottom:100px;
+  }
+  .contact {
+    max-width:150px;
+    font-size:4px;
+    left:300px;
+    bottom:10px;
+  }
+  .contact1{
+   display: none
+  
+  }
+  #show {
+   left:120px
+  }
+  
+  .notification{
+    width:800px;
+  }
+  #advice {
+    left:0%;
+    max-width: 600px;
+    top:500px;
+    position: relative;
+  }
+  .slidepost {
+    display: none;
+  }
+  .splide {
+    left:0%;
+    bottom:10px;
+    max-width: 680px;
+    height: 300px;
+  }
+  #scroller {
+   max-width: 100%;
+  }
+  
+  nav .mainMenu {
+   max-width: 800px;
+  }
+  
+  .welcomeText {
+   left:150px
+  }
+
+}

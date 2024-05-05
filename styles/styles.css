@@ -12,60 +12,7 @@ header{
     top:0%;
     z-index:1;
 }
-.navigation { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 20px;
-    height: 50px;
-    position: relative;
-    top:12px
-}
-.nav-bar {
-    position: absolute;
-    right:10px;
-}
-.nav-icon {
-    position: absolute;
-    right:200px;
-    top:5px;
-    font-size: 20px;
-    cursor: pointer;
-}
 
-.nav-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 300px;
-    position: absolute;
-    left:710px; 
-    font-size: 21px;
-}
-.nav-text a:hover {
-    color:var(--color3);
-    cursor: pointer;
-}
-
-.navigation a {
-    text-decoration: none;
-    color:var(--color1);
-}
-#searchbar {
-    padding: 8px;
-    border: none;
-    border-radius:7px;
-    font-size: 14px;
-}
-#searchbar:focus {
-    outline-color: violet 
-}
-#searchicon {
-    position: absolute;
-    right:15px;
-    top:7px;
-    font-size: 15px;
-}
 #headtext {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -517,31 +464,88 @@ html {
     color:var(--color1);
     margin-bottom: 5px;
 }
-
- ul {list-style: none;
-}
-
-.list{display: flex;}
-
-
-.burgerbar {
-    position: absolute;
-    top:10px;
-    right:980px;
+    
+nav {
+    color:var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color1);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    background:var(--color3);
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook-f:hover {
+    color: var(--color3);
+  }
+  .fa-twitter:hover {
+    color: var(--color3);
+  }
+  .fa-youtube:hover {
+    color: var(--color3);
+  }
+ 
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
     font-size: 25px;
-    display:none ;}
-    
-    @media (max-width:480px) {
-        .nav-text {display: none;}
-        
-        .burgerbar {display: block;}
-        .list {flex-direction: column;
-            text-align:center;
-            font-size: 17px;
-        }
-        .nav-text.activenav{
-            display: block;
-            margin-top: 20px;
-        }
+    font-family: "Dancing Script", cursive;
+  }
+  @media (max-width: 480px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(245, 207, 213);
+      transition: top 1s ease 0s;
+      display: none;
     }
-    
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: var(--color3);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+  

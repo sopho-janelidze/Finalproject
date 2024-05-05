@@ -2,7 +2,7 @@
 
 //scroll
 
-import { scrollTo } from './scroll.js';
+import { scrollTo } from './JS/scroll.js';
 
 scrollTo();
 
@@ -82,35 +82,48 @@ axios.get('https://api.adviceslip.com/advice/search/love')
   //validation
 
 
-import { form } from './validation.js';
+import { form } from './JS/validation.js';
 
 form();
 
-import { passwordvalidation } from './validation.js';
+import { passwordvalidation } from './JS/validation.js';
 
 passwordvalidation();
 
-import {emailvalidation} from './validation.js';
+import {emailvalidation} from './JS/validation.js';
 
 emailvalidation();
 
-import { showpassword } from './validation.js';
+import { showpassword } from './JS/validation.js';
 
 showpassword ();
 
 //cookies
 
-import {loginfo} from './cookies.js';
+import {loginfo} from './JS/cookies.js';
 
 loginfo();
 
 //burger bar
 
-document.addEventListener('DOMContentLoaded', function() {
-  let nav = document.getElementById('navmenu');
-  let burger = document.getElementById('burger');
+let mainMenu = document.querySelector('.mainMenu');
+let closeMenu = document.querySelector('.closeMenu');
+let openMenu = document.querySelector('.openMenu');
+let menu_items = document.querySelectorAll('nav .mainMenu li a');
 
-  burger.addEventListener('click', function() {
-      nav.classList.toggle('activenav');
-  });
-});
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
+}

@@ -24,7 +24,7 @@
   #aboutp {
     position: relative;
     left:0%;
-    top:550px
+    top:550px;
   }
   #abouthead{
     left:0%
@@ -45,8 +45,8 @@
     bottom:100px
  }
  .contact {
-    max-width:300px;
-    font-size:5px;
+    max-width:200px;
+    font-size:4px;
     left:0%;
     bottom:0px;
  }

@@ -130,6 +130,7 @@ hr {
     margin-bottom: 100px;
 }
 #explorename {
+    margin-top: 60px;
     text-align: center;
     font-size:25px;
     color:var(--color1);
@@ -165,12 +166,12 @@ hr {
     font-size:20px;
     color:var(--color1);
     margin-top: 40px;
+    line-height: 30px;
+
+  
 }
-.footer1 p {
-    margin-bottom: 10px;
-    max-width: 100%;
-}
-.footer1 p:hover {
+
+.footer1 li:hover {
     color:var(--color3);
     cursor: pointer;
 }

@@ -8,6 +8,3 @@ accordion.forEach(function(item) {
     });
 });
 
-import { scrollTo } from './scroll.js';
-
-scrollTo();
